@@ -3,12 +3,14 @@ function disable(){
   let loading = document.getElementById("load");
   load.style.display = "block";
   button.disabled = true;
+  button.style.display = "none";
 }
 function revert(){
   let button = document.getElementById("submit");
   let loading = document.getElementById("load");
   load.style.display = "none";
   button.disabled = false;
+  button.style.display = "block";
 }
 
 document.getElementById("submit").addEventListener('click', function() {
